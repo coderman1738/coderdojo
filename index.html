@@ -1,51 +1,14 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
- var green = "green"
- var purple = "purple"
- var orange = "orange"
-
- function clickme() {
-  prompt("Hello");
- }
-
- function testResults(results) {
-   var Input = results.inputbox.value;
-   console.log(Input);
-    console.log(results);
-   //document.write(Input);
-   document.getElementById("button").innerHTML = Input;
- }
-
-function colorSwitch(color) {
-    var target = document.getElementById("hoverColor");
-    console.log("run");
-    document.getElementById("hoverColor").style.backgroundColor = color;
-
-</script>
-
-<style>
-  #hoverColor{
-    background-color:red;
-    width:200;
-    height:200;
-  }
-  #hoverColor:hover{
-    background-color:blue;
-    width:200;
-    height:200;
-
-  }
-</style>
-<button onclick="clickme()">Click Me</button>
-<FORM NAME="myform" ACTION="" METHOD="GET">
-  Enter something in the box: <BR>
-    <INPUT TYPE="text" NAME="inputbox" VALUE="">
-    <INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
-</form>
-<span id="button"></span>
-<div id="hoverColor" width="200" height="200" onclick="colorSwitch()"></div>
-<form>
-    <input type="submit" value="Green" onclick="colorSwitch(green)">
-    <input type="submit" value="Purple" onclick="colorSwitch(purple)">
-    <input type="submit" value="Orange" onclick="colorSwitch(orange)">
-</form>
+<head>
+<title>Webpage</title>
+<link rel="stylesheet" href="index.css" type="text/css"></link>
+</head>
+<body bgcolor="red"> 
+<div id="start">
+<h1>Lets go on an adventure.</h1><br>
+<b>Where <i>do <u>you <strike>want</strike></u></i> to go today?</b><br>
+<b><a href="nullisl.html">Null Island</a></b><br>
+<img src="nullisland.jpg" width="200" height="200"><br>
+<b><a href="currloc.html">Your Current Location</a></b><br>
+<img src="location.png"><br>
+</div>
+</body>
